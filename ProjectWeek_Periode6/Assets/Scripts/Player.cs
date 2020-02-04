@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(horiVel, 0, 4);
+        GetComponent<Rigidbody>().velocity = new Vector3(horiVel, 0, 5);
 
         if ((Input.GetKeyDown(MoveL)) && (LaneNum>1) && (ControlLocked == "N"))
         {
@@ -38,6 +39,15 @@ public class Player : MonoBehaviour
             ControlLocked = "Y";
         }
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Lethal")
+        {
+            Destroy(gameObject);
+            
+        }
+
+    }
 
     IEnumerator stopSlide()
     {
@@ -45,11 +55,5 @@ public class Player : MonoBehaviour
         horiVel = 0;
         ControlLocked = "N";
     }
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Lethal")
-        {
-
-        }
-    }
+   
 }
