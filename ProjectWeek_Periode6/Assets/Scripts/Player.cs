@@ -45,4 +45,11 @@ public class Player : MonoBehaviour
         horiVel = 0;
         ControlLocked = "N";
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Lethal")
+        {
+
+        }
+    }
 }
