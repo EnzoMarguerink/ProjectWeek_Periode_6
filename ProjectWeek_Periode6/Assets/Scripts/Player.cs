@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     public int LaneNum = 2;
 
     public string ControlLocked = "N";
+
+    private bool gotHit = false;
+    private int health = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +47,26 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Lethal")
         {
             Destroy(gameObject);
-            
+
         }
+        //if (other.gameObject.tag == "Enemy")
+        //{
+        //    //if player didn't get hit, start new coroutine
+        //    if (!gotHit)
+        //        StartCoroutine(TakeDamage(20, 6));
+        //}
 
     }
+    //IEnumerator TakeDamage(int damage, int seconds)
+    //{
+    //    gotHit = true;
+    //    //substract damage from health
+    //    health -= damage;
+    //    //wait for x seconds
+    //    yield return new WaitForSeconds(seconds);
+    //    //after x seconds, the player can get hit again
+    //    gotHit = false;
+    //}
 
     IEnumerator stopSlide()
     {
