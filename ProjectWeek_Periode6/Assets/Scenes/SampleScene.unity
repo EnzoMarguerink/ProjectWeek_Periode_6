@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 68284922}
   m_Layer: 0
   m_Name: Obst
-  m_TagString: Lethal
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 270169023}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Lethal
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,8 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17978d066770cb47a53540284aa56db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSection:
-  - {fileID: 1560685939652484091, guid: 2110d6eeb7c668a41a1696b8b01fb53d, type: 3}
+  nextSection: []
 --- !u!1 &1730629902
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +638,7 @@ GameObject:
   - component: {fileID: 1730629903}
   m_Layer: 0
   m_Name: 'Obst '
-  m_TagString: Lethal
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,7 +731,7 @@ GameObject:
   - component: {fileID: 1831735100}
   m_Layer: 0
   m_Name: Obst
-  m_TagString: Lethal
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
