@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.15
+      value: 2.1129
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.59
+      value: 2.1019
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.50476277
+      value: -3.2199
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
@@ -65,17 +65,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 47.037476
+      value: 120.05375
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 47.037476
+      value: 120.05375
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 47.037476
+      value: 120.05375
       objectReference: {fileID: 0}
     - target: {fileID: -2888486459038998104, guid: 3c74a00ecbf70f54684fce566bef7527,
         type: 3}
@@ -91,6 +91,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4511576990242663222, guid: 3c74a00ecbf70f54684fce566bef7527,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0161
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c74a00ecbf70f54684fce566bef7527, type: 3}
