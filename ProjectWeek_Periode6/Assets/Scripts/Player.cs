@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Animations;
 
 public class Player : MonoBehaviour
 {
@@ -15,10 +16,13 @@ public class Player : MonoBehaviour
 
     private bool gotHit = false;
     private int health = 100;
+
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,11 @@ public class Player : MonoBehaviour
             LaneNum += 1;
             ControlLocked = "Y";
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            anim.Play("Active");
+        }
+
     }
     private void OnCollisionEnter(Collision other)
     {
