@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class Player : MonoBehaviour
 {
     public KeyCode MoveL;
@@ -44,8 +46,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Lethal")
         {
-            Destroy(gameObject);
-
+            SceneManager.LoadScene(0);
         }
         //if (other.gameObject.tag == "Enemy")
         //{
